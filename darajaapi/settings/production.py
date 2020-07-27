@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["powerful-headland-97744.herokuapp.com"]
+ALLOWED_HOSTS = ["polar-cove-29758.herokuapp.com",]
 
 
 # Application definition

@@ -2,18 +2,18 @@ import datetime
 
 from decouple import config
 
-AWS_ACCESS_KEY_ID = config("AKIAULULFLSATABKTAUB")
-AWS_SECRET_ACCESS_KEY = config("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")
+AWS_ACCESS_KEY_ID = config("AKIAULULFLSAQRTCEDGB")
+AWS_SECRET_ACCESS_KEY = config("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")
 
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
-AWS_QUERYSTRING_AUTH = False
+AWS_QUERYSTRING_AUTH = True
 
 DEFAULT_FILE_STORAGE = "darajaapi.aws.utils.MediaRootS3BotoStorage"
 STATICFILES_STORAGE = "darajaapi.aws.utils.StaticRootS3BotoStorage"
 
 
-AWS_STORAGE_BUCKET_NAME = config("darajaAPI-bucket")
+AWS_STORAGE_BUCKET_NAME = config("darajaapi")
 S3DIRECT_REGION = "eu-west-2"
 
 S3_URL = "//%s.s3.amazonaws.com/" % AWS_STORAGE_BUCKET_NAME
