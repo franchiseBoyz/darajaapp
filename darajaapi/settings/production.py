@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get(SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["powerful-headland-97744.herokuapp.com"]
 
 
 # Application definition
@@ -151,4 +151,4 @@ SECURE_HSTS_SECONDS             = 1000000
 SECURE_FRAME_DENY               = True
 
 
-from daraja.aws.conf import *
+from darajaapi.aws.conf import *
