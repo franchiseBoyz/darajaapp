@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'darajaapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'darajaAPI',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'Ut420GLOCKpostgres',
+        'PASSWORD': 'Ut420GLOCK',
         'HOST': 'localhost',
         'PORT': '5432',
     }
