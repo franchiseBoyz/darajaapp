@@ -1,2 +1,1 @@
-# darajaapp
-DarajaApp
+# darajaAPI
