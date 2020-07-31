@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+<<<<<<< HEAD
 from decouple import config, Csv
+=======
+>>>>>>> 4768d5e636ff3da26df795d0478a819257060c14
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
