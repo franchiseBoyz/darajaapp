@@ -11,10 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-<<<<<<< HEAD
-from decouple import config, Csv
-=======
->>>>>>> 4768d5e636ff3da26df795d0478a819257060c14
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
@@ -25,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o1g86wz+=l9#_8aq!5ghbhyckfhv0wqfn_o4^3+i_f+)e!2a(1'
+SECRET_KEY = 'gvc_470!x-(u-hai_7$+@jh(z9ay40hm1k#(txkdc1pqeq8sbn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
