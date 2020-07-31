@@ -12,7 +12,7 @@ import keys
 def lipa_na_mpesa():
       formatted_time = get_timestamp()
       decoded_password = generate_password(formatted_time)
-  
+
       access_token = generate_access_token()
       api_url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
 
@@ -28,13 +28,13 @@ def lipa_na_mpesa():
           "PartyA": keys.phone_number,
           "PartyB": keys.business_short_code,
           "PhoneNumber": keys.phone_number,
-          "CallBackURL": "https://fullstackdjango.com/lipanampesa",
+          "CallBackURL": "https://polar-cove-29758.herokuapp.com/lipanampesa/",
           "AccountReference": "35423933",
           "TransactionDesc": "Paying Dowry"
         }
-        
+
       response = requests.post(api_url, json = request, headers=headers)
-        
+
       print (response.text)
 
 lipa_na_mpesa()
