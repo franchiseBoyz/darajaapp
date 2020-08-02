@@ -28,7 +28,7 @@ def lipa_na_mpesa():
           "PartyA": keys.phone_number,
           "PartyB": keys.business_short_code,
           "PhoneNumber": keys.phone_number,
-          "CallBackURL": "https://polar-cove-29758.herokuapp.com/lipanampesa/",
+          "CallBackURL": "https://polar-cove-29758.herokuapp.com/api/payments/lnm/",
           "AccountReference": "35423933",
           "TransactionDesc": "Paying Dowry"
         }
