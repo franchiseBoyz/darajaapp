@@ -31,6 +31,9 @@ class LNMCallbackUrlAPIView(CreateAPIView):
         str_transaction_date = str(transaction_date)
         transaction_datetime = datetime.strptime(str_transaction_date, "%Y%m%d%H%M%S")
 
+        import pytz
+        my_transaction_datetime = pytz.utc.localize(transaction_datetime)
+
         from mpesa.models import LNMOnline
 
         our_model = LNMOnline.objects.create(
@@ -41,7 +44,7 @@ class LNMCallbackUrlAPIView(CreateAPIView):
             ResultDesc = result_description,
             MpesaReceiptNumber = mpesa_receipt_number,
             Balance = balance,
-            TransactionDate = transaction_datetime,
+            TransactionDate = my_transaction_datetime,
             PhoneNumber = phone_number,
         )
 
