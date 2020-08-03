@@ -14,8 +14,9 @@ def register_url():
 	request = {
 			"ShortCode": keys.short_code,
 			"ResponseType": "Completed",
-			"ConfirmationURL": "https://fullstackdjango.com/confirmation",
-			"ValidationURL": "https://fullstackdjango.com/validation_url"}
+			"ConfirmationURL": "https://polar-cove-29758.herokuapp.com/api/payments/c2b-confirmation",
+			"ValidationURL": "https://polar-cove-29758.herokuapp.com/api/payments/c2b-validation"
+			}
 
 
 	response = requests.post(api_url, json = request, headers=headers)
@@ -29,13 +30,13 @@ def simulate_c2b_transaction():
 
 	api_url = "https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate"
 	headers = {"Authorization": "Bearer %s" % my_access_token}
-	request = { 
+	request = {
 
 			"ShortCode": keys.short_code,
 			"CommandID":"CustomerPayBillOnline",
 			"Amount":"2",
 			"Msisdn": keys.test_msisdn,
-			"BillRefNumber":" 35423933" 
+			"BillRefNumber":" 35423933"
 			}
 
 	response = requests.post(api_url, json = request, headers=headers)
