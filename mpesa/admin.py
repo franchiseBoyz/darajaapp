@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from mpesa.models import LNMOnline
+from mpesa.models import LNMOnline, C2BPayments
 
 
 class LNMOnlineAdmin(admin.ModelAdmin):
