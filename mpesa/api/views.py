@@ -4,6 +4,7 @@ from rest_framework.permissions import AllowAny
 
 from mpesa.api.serializers import LNMOnlineSerializer
 from mpesa.models import LNMOnline
+from rest_framework.response import Response
 
 
 class LNMCallbackUrlAPIView(CreateAPIView):
@@ -35,6 +36,7 @@ class LNMCallbackUrlAPIView(CreateAPIView):
         our_model = LNMOnline.objects.create(
             CheckoutRequestID = checkout_request_id,
             MerchantRequestID = merchant_request_id,
+            Amount = amount,
             ResultCode = result_code,
             ResultDesc = result_description,
             MpesaReceiptNumber = mpesa_receipt_number,
@@ -44,3 +46,5 @@ class LNMCallbackUrlAPIView(CreateAPIView):
         )
 
         our_model.save()
+
+        return Response {"OurResultDesc":"SUCCESSFUL"}
