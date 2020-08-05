@@ -1,6 +1,7 @@
 from decouple import config, Csv
 
-business_shortCode = config("BUSINESS_SHORTCODE")  # Lipa Na Mpesa Shortcode
+
+business_shortCode = config("BUSINESS_SHORTCODE")
 phone_number = config("PHONE_NUMBER")
 lipa_na_mpesa_passkey = config("LNM_PASSKEY")
 consumer_key = config("CONSUMER_KEY")
