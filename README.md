@@ -1,110 +1,52 @@
-# woooApp
-woooApp project built on djangorestframework that uses MPESAAPI as a means of payment for customers who purchase items on the app.
-
-### Installation
-git clone https://github.com/3HeadedSnake/darajaapp.git
-
-##then;
-##create a virtual envirenment folder by typing on your terminal;
-python -m virtualenv env
-##While still in the terminal, activate the virtual environment created above by typing;
-##for windows systems
-env\Scripts\activate.bat
-##for Linux based systems
-source env/bin/avtivate
-##install project requirements;
-pip install - r requirements.txt
-
-##For successfull installation of the project, navigate to darajaapi/mpesa_core/keys.py and update with your credentials
-also,
-#Navigate to  darajaapi/aws/conf.py to add your {AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY} for storing static files. You must have an aws account for this.
-##Navigate to darajaapi/setting and update the __init__.py to import from production instead of local.
-
-
-
-
-
-
-
-
-
 ### Prerequisites
 
-
-
 ```
-Give examples
+woooApp project built on djangorestframework that uses MPESAAPI as a means of payment for customers who purchase items on the app.
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+For successful run of the project run:
 
 ```
-Give the example
+git clone https://github.com/3HeadedSnake/darajaapp.git
 ```
 
-And repeat
+then create a virtual envirenment folder with:
 
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+python -m virtualenv env
 
 ```
-Give an example
+while still in the parent directory run:
+for Windows
+```
+env\Scripts\activate.bat
+```
+and for Linux Systems
+```
+source env/bin/activate
+```
+Install the project requirements with:
+```
+pip install - r requirements.txt
 ```
 
-### And coding style tests
+For smooth running, update the navigate to ```darajaapi/mpesa_core/keys.py``` and update with your mpesa credentials.
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Also navigate to ```darajaapi/aws/conf.py``` and add your ```AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY}``` For this you must have an aws account. This will be used for storing your static files.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [DjangoRestFramework](https://www.django-rest-framework.org/) - The web framework used
+* [MPESAAPI](https://developer.safaricom.co.ke/apis-explorer) - Payment Management
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Troye Gilbert** - *Initial work* - [3HeadedSnake](https://github.com/3HeadedSnake)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
