@@ -1,8 +1,6 @@
 ### Prerequisites
 
-```
 woooApp project built on djangorestframework that uses MPESAAPI as a means of payment for customers who purchase items on the app.
-```
 
 ### Installing
 
